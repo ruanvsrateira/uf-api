@@ -34,4 +34,6 @@ const ufs = [
 
 server.get("/", (req, res) => res.json(ufs));
 
-server.listen(3000, () => console.log(`Server running at ${SERVER_PORT}`));
+server.listen(SERVER_PORT, () =>
+  console.log(`Server running at ${SERVER_PORT}`)
+);
